@@ -1,0 +1,5 @@
+#N canvas 364 25 879 594 10;
+#X obj 60 472 dac~, f 7;
+#X obj 70 17 ys.memory_loss 1;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
