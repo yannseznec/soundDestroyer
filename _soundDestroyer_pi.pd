@@ -14,7 +14,7 @@
 #X obj 697 200 change;
 #X obj 718 256 s 1-glitchbang_rcv;
 #X obj 550 430 delay 100;
-#X obj 605 360 print button1;
+#X obj 587 359 print button1;
 #X obj 697 363 print button2;
 #X obj 535 219 sel 0 1;
 #X msg 519 244 1;
