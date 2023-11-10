@@ -13,14 +13,14 @@
 #X floatatom 698 172 5 0 0 0 - - - 0;
 #X obj 697 200 change;
 #X obj 718 256 s 1-glitchbang_rcv;
-#X obj 553 430 delay 100;
+#X obj 550 430 delay 100;
 #X obj 605 360 print button1;
 #X obj 697 363 print button2;
 #X obj 535 219 sel 0 1;
 #X msg 519 244 1;
 #X msg 548 247 0;
 #X obj 707 232 sel 0;
-#X obj 70 17 ys.memory_loss 1 burundi.wav;
+#X obj 70 17 ys.memory_loss 1;
 #X connect 1 0 14 0;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
