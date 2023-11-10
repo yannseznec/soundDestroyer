@@ -10,6 +10,7 @@
 #X obj 564 130 route buttonPress1;
 #X obj 563 182 change;
 #X obj 567 211 s 1-playdestroy_rcv;
+#X obj 699 214 print button1;
 #X connect 1 0 0 0;
 #X connect 1 0 0 1;
 #X connect 2 0 3 0;
@@ -19,3 +20,4 @@
 #X connect 7 0 9 0;
 #X connect 8 0 7 0;
 #X connect 9 0 10 0;
+#X connect 9 0 11 0;
