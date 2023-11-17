@@ -1,10 +1,9 @@
-#N canvas 379 103 1156 801 10;
+#N canvas 248 71 1156 801 10;
 #X obj 154 29 inlet;
 #X obj 328 670 outlet;
 #X obj 240 663 outlet~;
 #X obj 225 488 pack 0 0;
-#X obj 224 102 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
+#X obj 224 102 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X floatatom 291 325 5 0 0 0 - - - 0;
 #X obj 227 523 line~;
 #X msg 44 357 start \$1;
@@ -23,8 +22,7 @@
 #X obj 226 140 t b b b b b;
 #X floatatom 377 434 5 0 0 0 - - - 0;
 #X obj 678 344 random 300;
-#X obj 685 311 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
+#X obj 685 311 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 678 365 + 50;
 #X obj 678 386 / 1000;
 #X floatatom 678 407 5 0 0 0 - - - 0;
@@ -34,8 +32,7 @@
 #X msg 786 393 -1;
 #X obj 697 484 *;
 #X obj 735 278 t b b;
-#X obj 733 245 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
+#X obj 733 245 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X floatatom 697 505 5 0 0 0 - - - 0;
 #X obj 548 512 +;
 #X floatatom 548 533 5 0 0 0 - - - 0;
@@ -52,8 +49,7 @@
 #X obj 284 82 r \$1-wavetable_samples;
 #X obj 308 129 / 44.1;
 #X obj 112 282 r \$1-wavetable_samples;
-#X text 338 379 so that the glitches start from existing wave (is this
-necessary?);
+#X text 338 379 so that the glitches start from existing wave (is this necessary?);
 #X connect 0 0 4 0;
 #X connect 3 0 6 0;
 #X connect 4 0 20 0;
