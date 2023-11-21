@@ -1,4 +1,4 @@
-#N canvas 90 193 520 559 10;
+#N canvas 236 109 1069 582 10;
 #X obj 60 472 dac~, f 7;
 #N canvas 150 175 1065 691 bela 0;
 #X obj 18 94 loadbang;
@@ -25,6 +25,6 @@
 #X connect 10 0 9 0;
 #X connect 11 0 3 0;
 #X restore 119 469 pd bela;
-#X obj 60 33 ys.memory_loss 1 poetry.wav;
+#X obj 60 33 ys.memory_loss 1 burundi_short.wav;
 #X connect 2 0 0 0;
 #X connect 2 0 0 1;
