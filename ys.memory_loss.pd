@@ -39,11 +39,11 @@
 #X obj 31 331 hsl 195 15 0 1 0 0 empty \$0-currentloc-clock empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 1056 150 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 356 857 s \$0-currentloc-L;
-#X obj 257 329 bng 15 250 50 0 \$1-reset_all empty reset\ wavetable 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 257 317 bng 15 250 50 0 \$1-reset_all empty reset\ wavetable 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 975 645 soundfiler;
 #X floatatom 980 678 15 0 0 0 - - - 0;
 #X obj 982 530 openpanel;
-#X obj 257 359 bng 15 250 50 0 \$1-choose_file \$1-choose_file_rcv choose\ file 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 101 367 bng 15 250 50 0 \$1-choose_file \$1-choose_file_rcv choose\ file 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 1123 507 loadbang;
 #X obj 1191 489 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 979 567 pack s f;
@@ -58,7 +58,7 @@
 #X floatatom 745 517 5 0 0 0 - - - 0;
 #X obj 793 440 r \$1-glitch-rate;
 #X obj 1080 385 r \$1-reset_all;
-#X obj 289 46 tgl 50 0 \$1-playdestroy \$1-playdestroy_rcv play/destroy 17 7 0 10 #c6feff #000000 #000000 0 1;
+#X obj 287 46 tgl 50 0 \$1-playdestroy \$1-playdestroy_rcv play/destroy 17 7 0 10 #c6feff #000000 #000000 0 1;
 #X obj 287 103 tgl 50 0 \$1-record_sound \$1-record_sound_rcv record\ sound 17 7 0 10 #ffc7c6 #000000 #000000 0 1;
 #X obj 449 398 s \$0-playdestroy;
 #X obj 175 477 r \$0-playdestroy;
@@ -412,7 +412,7 @@
 #X msg 372 442 vis 1;
 #X obj 372 463 s pd-\$1-help;
 #X obj 374 423 r \$1-help;
-#X obj 256 385 bng 15 250 50 0 \$1-help empty help 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 259 362 bng 15 250 50 0 \$1-help empty help 17 7 0 10 #fcfcfc #000000 #000000;
 #N canvas 609 25 447 847 \$1-help 0;
 #X obj 20 24 cnv 15 400 800 empty empty Sample\ Destroyer 20 12 1 25 #f1f4f4 #404040 0;
 #X obj 40 65 cnv 15 1 1 empty empty listening\ and\ destroying 0 0 0 12 #f1f3f3 #404040 0;
@@ -435,6 +435,7 @@
 #X obj 1209 701 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X floatatom 1208 748 5 0 0 0 - - - 0;
 #X msg 813 63 1;
+#X text 885 45;
 #X connect 0 0 2 0;
 #X connect 0 0 71 0;
 #X connect 1 0 14 0;
