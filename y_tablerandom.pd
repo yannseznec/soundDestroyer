@@ -1,4 +1,4 @@
-#N canvas 248 71 1156 801 10;
+#N canvas 362 36 1156 801 10;
 #X obj 154 29 inlet;
 #X obj 328 670 outlet;
 #X obj 240 663 outlet~;
@@ -50,6 +50,13 @@
 #X obj 308 129 / 44.1;
 #X obj 112 282 r \$1-wavetable_samples;
 #X text 338 379 so that the glitches start from existing wave (is this necessary?);
+#X obj 700 593 bng 16 250 50 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000;
+#X obj 700 614 t b b b b;
+#X msg 745 647 0;
+#X obj 736 684 line~;
+#X obj 707 776 tabwrite~ \$1-wavetable-full;
+#X msg 688 649 1 1000;
+#X obj 700 572 r \$2-reset_all;
 #X connect 0 0 4 0;
 #X connect 3 0 6 0;
 #X connect 4 0 20 0;
@@ -103,3 +110,11 @@
 #X connect 47 0 48 0;
 #X connect 48 0 13 0;
 #X connect 49 0 12 1;
+#X connect 51 0 52 0;
+#X connect 52 1 56 0;
+#X connect 52 2 55 0;
+#X connect 52 3 53 0;
+#X connect 53 0 54 0;
+#X connect 54 0 55 0;
+#X connect 56 0 54 0;
+#X connect 57 0 51 0;
