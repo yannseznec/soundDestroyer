@@ -41,7 +41,7 @@
 #X obj 37 195 r analog1;
 #X obj 325 285 r analog2;
 #X obj 240 64 r digital0;
-#X obj 319 132 r digital1;
+#X obj 319 105 r digital1;
 #X obj 406 65 r digital2;
 #X obj 491 68 r digital3;
 #X obj 804 13 r digital6;
@@ -88,7 +88,6 @@
 #X connect 11 0 49 0;
 #X connect 12 0 48 0;
 #X connect 13 0 38 0;
-#X connect 14 0 32 0;
 #X connect 15 0 29 0;
 #X connect 16 0 24 0;
 #X connect 17 0 18 0;
