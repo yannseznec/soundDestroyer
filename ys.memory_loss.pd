@@ -312,7 +312,7 @@
 #X obj 832 684 bng 16 250 50 0 empty \$1-glitchbang empty 0 -8 0 10 #fcfcfc #000000 #000000;
 #X obj 745 441 * 100;
 #X obj 11 434 array define -k \$0-sound-L;
-#A resize 1.49675e+06;
+#A resize 214389;
 #X obj 945 704 t b b b;
 #X obj 1061 347 soundfiler;
 #X obj 1056 246 i \$0;
@@ -442,9 +442,11 @@
 #X floatatom 1208 748 5 0 0 0 - - - 0;
 #X msg 813 63 1;
 #X text 885 45 comment;
+#X obj 109 721 print samplelength;
 #X connect 0 0 2 0;
 #X connect 0 0 71 0;
 #X connect 1 0 14 0;
+#X connect 1 0 163 0;
 #X connect 2 0 1 0;
 #X connect 3 0 13 0;
 #X connect 4 0 5 0;
