@@ -39,7 +39,7 @@
 #X obj 31 331 hsl 195 15 0 1 0 0 empty \$0-currentloc-clock empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 1056 150 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 356 857 s \$0-currentloc-L;
-#X obj 257 317 bng 15 250 50 0 \$1-reset_all empty reset\ wavetable 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 257 317 bng 15 250 50 0 \$1-reset_all \$1-reset_table_rcv reset\ wavetable 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 975 645 soundfiler;
 #X floatatom 980 678 15 0 0 0 - - - 0;
 #X obj 982 530 openpanel;
@@ -312,7 +312,7 @@
 #X obj 832 684 bng 16 250 50 0 empty \$1-glitchbang empty 0 -8 0 10 #fcfcfc #000000 #000000;
 #X obj 745 441 * 100;
 #X obj 11 434 array define -k \$0-sound-L;
-#A resize 141824;
+#A resize 1.49675e+06;
 #X obj 945 704 t b b b;
 #X obj 1061 347 soundfiler;
 #X obj 1056 246 i \$0;
@@ -405,9 +405,9 @@
 #X connect 25 0 24 0;
 #X connect 26 0 23 0;
 #X restore 772 379 pd sampler;
-#X obj 29 52 hsl 136 16 0 10 0 1 \$1-glitch-rate empty auto\ glitch\ rate -2 -8 0 10 #fcfcfc #000000 #000000 300 1;
-#X obj 32 125 hsl 136 16 0 1 0 1 \$1-glitch-length-range empty glitch\ length\ range -2 -8 0 10 #fcfcfc #000000 #000000 1400 1;
-#X obj 30 157 hsl 136 16 0 1 0 1 \$1-glitch-height-range empty glitch\ slope\ range -2 -8 0 10 #fcfcfc #000000 #000000 9900 1;
+#X obj 29 52 hsl 136 16 0 10 0 1 \$1-glitch-rate \$1-glitch-rate_rcv auto\ glitch\ rate -2 -8 0 10 #fcfcfc #000000 #000000 8134 1;
+#X obj 32 125 hsl 136 16 0 1 0 1 \$1-glitch-length-range \$1-glitch_length_range_rcv glitch\ length\ range -2 -8 0 10 #fcfcfc #000000 #000000 4970 1;
+#X obj 30 157 hsl 136 16 0 1 0 1 \$1-glitch-height-range \$1-glitch_height_range_rcv glitch\ slope\ range -2 -8 0 10 #fcfcfc #000000 #000000 10560 1;
 #X text 1004 781 this may not be necessary anymore?;
 #X msg 372 442 vis 1;
 #X obj 372 463 s pd-\$1-help;
@@ -423,6 +423,12 @@
 #X text 37 197 The patch uses wavetable playback - the graph you see on the main patch is the table that is playing the sound file. A straight diagonal line means it plays back normally. Any changes to this line change the playback (trying drawing on it!).;
 #X text 38 265 You can "glitch" this wavetable manually or automatically. When it receives a "glitchbang" the line will be distorted a bit \, with the randomness of the glitch controlled somewhat by the the two "range" sliders. Use "glitchbang" to just put some glitches into the wavetable manually. Set the "glitch on" toggle to have this happen automatically \, with the timing set by the "glitch rate" slider.;
 #X text 39 422 There is also a sampler built in to this patch. Using the sampler will mean that it will write the sound file to whatever name is set in the argument. I recognize this is a bit messy \, a better solution should be found.;
+#X text 39 486 The interface objects all have unique names so you can address them easily. Generally speaking it is best to use the "_rcv" name to change a setting. For example:;
+#X obj 41 539 tgl 16 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 41 560 s \$1-playdestroy_rcv;
+#X text 64 539 <- click me!;
+#X text 46 602 To-do: make a list here of all of the names.;
+#X connect 10 0 11 0;
 #X coords 0 847 1 846 85 10 0;
 #X restore 256 427 pd \$1-help;
 #X f 15;
@@ -435,7 +441,7 @@
 #X obj 1209 701 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X floatatom 1208 748 5 0 0 0 - - - 0;
 #X msg 813 63 1;
-#X text 885 45;
+#X text 885 45 comment;
 #X connect 0 0 2 0;
 #X connect 0 0 71 0;
 #X connect 1 0 14 0;
