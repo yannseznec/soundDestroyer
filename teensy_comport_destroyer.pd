@@ -49,6 +49,8 @@
 #X text 167 409 glitchspeed;
 #X text 43 377 length;
 #X text 112 381 height;
+#X msg 283 185 pollintervall 20;
+#X obj 345 133 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 28 0;
 #X connect 2 0 19 0;
@@ -90,3 +92,5 @@
 #X connect 34 0 37 0;
 #X connect 35 0 38 0;
 #X connect 36 0 39 0;
+#X connect 50 0 19 0;
+#X connect 51 0 50 0;
