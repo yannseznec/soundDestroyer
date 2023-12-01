@@ -51,6 +51,7 @@
 #X text 112 381 height;
 #X msg 283 185 pollintervall 20;
 #X obj 345 133 loadbang;
+#X text 451 53 this should be a good way to do high resolution analog input on a raspberry pi. i am currently struggling with getting this patch running well on a pi at all \, though \, so who knows;
 #X connect 0 0 1 0;
 #X connect 1 0 28 0;
 #X connect 2 0 19 0;
