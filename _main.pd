@@ -1,4 +1,4 @@
-#N canvas 0 188 1069 582 10;
+#N canvas 0 156 612 582 10;
 #X obj 60 472 dac~, f 7;
 #N canvas 150 175 1065 691 bela 0;
 #X obj 18 94 loadbang;
@@ -220,7 +220,7 @@
 #X connect 101 1 100 0;
 #X connect 103 0 17 0;
 #X connect 104 0 19 0;
-#X restore 172 470 pd midi routing;
+#X restore 175 468 pd midi routing;
 #X text 63 515 yann seznec / december 2023 / yannseznec.com;
 #X obj 60 36 ys.memory_loss 1 theSound.wav;
 #X connect 4 0 0 0;
