@@ -9,7 +9,7 @@ there are some poorly written instructions in the help window in the patch.
 
 it is essentially an improved version of one of the instruments in my Book of Knowledge of Impractical Musical Devices project: http://www.impracticaldevices.com
 
-let me know if you have any questions/comments: yann@yannseznec.com, @yannseznec on twitter
+let me know if you have any questions/comments: yann@yannseznec.com or find me on mastodon @yannseznec@mastodon.social
 
 http://www.yannseznec.com
 
