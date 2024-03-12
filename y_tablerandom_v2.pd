@@ -33,7 +33,7 @@
 #X obj 733 71 t b b b b;
 #X msg 778 104 0;
 #X obj 769 141 line~;
-#X obj 745 174 tabwrite~ \$1-wavetable-full;
+#X obj 682 188 tabwrite~ \$1-wavetable-full;
 #X msg 721 106 1 1000;
 #X obj 733 29 r \$2-reset_all;
 #X text 828 394 forward/backwards;
@@ -61,6 +61,7 @@
 #X floatatom 499 464 5 0 0 0 - - - 0;
 #X obj 499 392 random 80;
 #X obj 499 440 + 0.2;
+#X obj 700 219 tabwrite~ \$1-wavetable-full_r;
 #X connect 0 0 4 0;
 #X connect 3 0 6 0;
 #X connect 4 0 20 0;
@@ -95,9 +96,11 @@
 #X connect 30 0 31 0;
 #X connect 31 1 35 0;
 #X connect 31 2 34 0;
+#X connect 31 2 62 0;
 #X connect 31 3 32 0;
 #X connect 32 0 33 0;
 #X connect 33 0 34 0;
+#X connect 33 0 62 0;
 #X connect 35 0 33 0;
 #X connect 36 0 30 0;
 #X connect 38 0 39 0;

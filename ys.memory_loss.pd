@@ -1,4 +1,4 @@
-#N canvas 114 351 1250 750 10;
+#N canvas 114 122 1250 750 10;
 #X floatatom 15 590 15 0 0 0 - - - 0;
 #X floatatom 15 699 5 0 0 0 - - - 0;
 #X obj 15 664 / 44100;
@@ -165,7 +165,7 @@
 #X obj 889 475 loadbang;
 #X msg 913 540 \$1;
 #X obj 11 434 array define -k \$0-sound-L;
-#A resize 101824;
+#A resize 270774;
 #X obj 945 704 t b b b;
 #X obj 1061 347 soundfiler;
 #X obj 1056 246 i \$0;
@@ -235,8 +235,8 @@
 #X connect 26 0 23 0;
 #X restore 467 312 pd sampler;
 #X obj 29 48 hsl 136 16 0.01 1 0 1 \$1-glitch-rate \$1-glitch-rate_rcv auto\ glitch\ rate -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 32 125 hsl 136 16 0 1 0 1 \$1-glitch-length-range \$1-glitch_length_range_rcv glitch\ length\ range -2 -8 0 10 #fcfcfc #000000 #000000 675 1;
-#X obj 30 157 hsl 136 16 0 1 0 1 \$1-glitch-height-range \$1-glitch_height_range_rcv glitch\ slope\ range -2 -8 0 10 #fcfcfc #000000 #000000 10800 1;
+#X obj 32 125 hsl 136 16 0 1 0 1 \$1-glitch-length-range \$1-glitch_length_range_rcv glitch\ length\ range -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 30 157 hsl 136 16 0 1 0 1 \$1-glitch-height-range \$1-glitch_height_range_rcv glitch\ slope\ range -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 1004 781 this may not be necessary anymore?;
 #X msg 372 442 vis 1;
 #X obj 372 463 s pd-\$1-help;
@@ -356,10 +356,10 @@
 #X obj 881 210 t b f;
 #X msg 883 187 1;
 #X msg 912 183 -1;
-#X obj 184 88 vsl 15 90 0.1 2 0 1 \$1-rate \$1-rate_rcv playback\ speed 0 -9 0 10 #fcfcfc #000000 #000000 4216 1;
+#X obj 184 88 vsl 15 90 0.1 2 0 1 \$1-rate \$1-rate_rcv playback\ speed 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 891 160 sel 0 1;
 #X obj 846 120 r \$1-rate;
-#X obj 208 142 tgl 16 0 \$1-rev \$1-rev_rcv reverse 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 208 142 tgl 16 1 \$1-rev \$1-rev_rcv reverse 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 893 135 r \$1-rev;
 #X obj 208 102 bng 16 250 50 0 \$1-pitch_reset \$1-pitch_reset_rcv pitch\ reset 0 -8 0 10 #fcfcfc #000000 #000000;
 #X obj 851 31 r \$1-pitch_reset;
