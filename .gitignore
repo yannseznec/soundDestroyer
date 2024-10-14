@@ -7,3 +7,4 @@ build/.DS_Store
 .DS_Store
 poetry_short copy.wav
 *.wav
+.DS_Store
