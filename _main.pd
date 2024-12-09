@@ -1,5 +1,5 @@
-#N canvas 270 237 736 576 10;
-#X obj 228 445 dac~, f 7;
+#N canvas 0 25 849 824 10;
+#X obj 91 664 dac~, f 7;
 #N canvas 233 181 1065 691 bela 0;
 #X obj 249 237 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 297 88 r bela_digitalIn12;
@@ -171,12 +171,12 @@
 #X connect 63 0 5 0;
 #X connect 63 1 64 0;
 #X connect 64 0 41 1;
-#X restore 110 470 pd bela;
-#X obj 341 479 vradio 16 1 1 4 device device_rcv which\ device 0 -8 0 10 #fcfcfc #000000 #000000 0;
-#X text 367 477 memory box;
-#X text 366 494 one button;
-#X text 365 510 destroyer instrument;
-#N canvas 626 119 775 571 presets 0;
+#X restore 76 718 pd bela;
+#X obj 337 723 vradio 16 1 1 4 device device_rcv which\ device 0 -8 0 10 #fcfcfc #000000 #000000 0;
+#X text 363 721 memory box;
+#X text 362 738 one button;
+#X text 361 754 destroyer instrument;
+#N canvas 626 119 775 571 presets 1;
 #X obj 44 193 bng 16 250 50 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000;
 #X obj 47 82 r device;
 #X obj 47 103 sel 0 1 2, f 61;
@@ -192,7 +192,7 @@
 #X connect 2 2 4 0;
 #X connect 3 0 5 0;
 #X connect 4 0 6 0;
-#X restore 282 448 pd presets;
+#X restore 265 717 pd presets;
 #N canvas 10 282 1340 563 bela_instrument 0;
 #X obj 19 42 r 1-glitchbang;
 #X obj 19 63 bng 16 250 50 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000;
@@ -580,9 +580,9 @@
 #X connect 101 0 72 0;
 #X connect 102 0 39 0;
 #X connect 103 0 102 0;
-#X restore 80 494 pd bela_instrument;
-#X text 66 569 yann seznec / february 2024 / yannseznec.com;
-#X text 363 527 octobox;
+#X restore 76 738 pd bela_instrument;
+#X text 62 813 yann seznec / february 2024 / yannseznec.com;
+#X text 359 771 octobox;
 #N canvas 424 112 814 605 octobox_controller 0;
 #X obj 25 13 ys.comport;
 #X obj 50 243 r analog0;
@@ -686,7 +686,7 @@
 #X connect 56 0 10 0;
 #X connect 57 0 46 0;
 #X connect 58 0 47 0;
-#X restore 198 493 pd octobox_controller;
+#X restore 191 738 pd octobox_controller;
 #N canvas 124 259 1043 613 destroyer_midi 0;
 #X text 26 119 length;
 #X text 232 270 height;
@@ -827,7 +827,8 @@
 #X connect 68 1 67 0;
 #X connect 70 0 66 0;
 #X connect 70 0 18 0;
-#X restore 179 470 pd destroyer_midi 1230;
-#X obj 75 37 ys.memory_loss_stereo 1 IMG_1056.wav;
+#X restore 126 718 pd destroyer_midi 1230;
+#X obj 51 16 ys.memory_loss_stereo 1 export.wav;
+#X text 472 21 this version is mainly for use with Bela board;
 #X connect 12 0 0 0;
 #X connect 12 1 0 1;
