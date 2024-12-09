@@ -1,4 +1,4 @@
-#N canvas 66 72 1402 736 12;
+#N canvas 43 67 1272 661 12;
 #X obj 29 15 ys.memory_loss_stereo 1;
 #X obj 438 15 ys.memory_loss_stereo 2;
 #X obj 846 16 ys.memory_loss_stereo 3;
