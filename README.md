@@ -19,6 +19,8 @@ You should be able to map MIDI controllers (or other types of control) easily, t
 
 it is essentially an improved version of one of the instruments in my Book of Knowledge of Impractical Musical Devices project: http://www.impracticaldevices.com
 
+If you're of the academic persuasion you can read a paper about this work here: https://dl.acm.org/doi/10.1145/3677045.3685496
+
 let me know if you have any questions/comments: yann@yannseznec.com or find me on mastodon @yannseznec@mastodon.social
 
 http://www.yannseznec.com
