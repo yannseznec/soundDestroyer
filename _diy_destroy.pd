@@ -1,4 +1,4 @@
-#N canvas 43 67 1272 661 12;
+#N canvas 51 187 1272 661 12;
 #X obj 29 15 ys.memory_loss_stereo 1;
-#X obj 438 15 ys.memory_loss_stereo 2;
-#X obj 846 16 ys.memory_loss_stereo 3;
+#X text 462 80 <-- duplicate this if you want more than one instance at the same time. If you do this \, make sure to change the argument at the top to a different number (i.e. \, "ys.memory_loss_stereo 2");
+#X text 56 624 yann seznec / december 2024 / yannseznec.com;
